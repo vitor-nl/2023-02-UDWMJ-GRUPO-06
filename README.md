@@ -1,1 +1,0 @@
-# Arquivo Principal do programa
