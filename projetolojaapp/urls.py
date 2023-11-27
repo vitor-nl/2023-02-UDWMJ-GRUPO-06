@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('Eletronic Max', include('core.urls', namespace='core')),
     path('categorias/', include('categories.urls', namespace='categories')),
+    path('produtos/', include('products.urls', namespace='products')),
 ]
