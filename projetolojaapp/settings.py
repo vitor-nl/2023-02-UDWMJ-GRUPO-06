@@ -44,12 +44,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'projetolojaapp',
     'rest_framework',
     'categories.apps.CategoriesConfig',
     'widget_tweaks',
     'core.apps.CoreConfig', 
     'products.apps.ProductsConfig',
+    'socialnetworks.apps.SocialnetworksConfig',
 ]
 
 MIDDLEWARE = [
