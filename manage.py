@@ -20,3 +20,10 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+
+# python manage.py migrate --run-syncdb synca com o db
+
+# models.py abaixo de Meta:
+# managed = True
+# db_table = 'products'
