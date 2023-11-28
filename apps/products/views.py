@@ -1,9 +1,15 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from .forms import ProductForm
 from .models import Product
+from rest_framework import viewsets
+from .serializer import ProductSerializer
 
 
 # Create your views here.
+
+class ProductViewSet(viewsets.ModelViewSet):
+    queryset = Product.objects.all()
+    serializer_class = ProductSerializer  
 
 def add_product(request):
     template_name = 'products/add_product.html'
