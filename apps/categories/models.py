@@ -10,6 +10,8 @@ class Category(models.Model):
         verbose_name = 'Categoria'
         verbose_name_plural = 'Categorias'
         ordering =['id']
+        managed = True
+        db_table = 'categories'
 
     def __str__(self):
         return self.name
