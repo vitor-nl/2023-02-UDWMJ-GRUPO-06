@@ -9,6 +9,8 @@ class Socialnetwork(models.Model):
         verbose_name = 'Rede Social'
         verbose_name_plural = 'Redes Sociais'
         ordering =['id']
+        managed = True
+        db_table = 'socialnetworks'
 
     def __str__(self):
         return self.name
