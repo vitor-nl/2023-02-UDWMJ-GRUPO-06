@@ -19,6 +19,8 @@ class Order(models.Model):
         verbose_name = 'Pedido'
         verbose_name_plural = 'Pedidos'
         ordering =['id']
+        managed = True
+        db_table = 'orders'
 
     def __str__(self):
         return "%s" % (self.total_price) 
