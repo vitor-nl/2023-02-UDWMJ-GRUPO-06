@@ -14,6 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
+admin.autodiscover()
 from django.urls import path, include
 
 urlpatterns = [
@@ -21,4 +22,7 @@ urlpatterns = [
     path('Eletronic Max', include('core.urls', namespace='core')),
     path('categorias/', include('categories.urls', namespace='categories')),
     path('produtos/', include('products.urls', namespace='products')),
+    path('redessociais/', include('socialnetworks.urls', namespace='socialnetworks')),
+    path('clientes/', include('clients.urls', namespace='clients')),
+    path('clientes_redessociais/', include('clients.urls', namespace='clients_socialnetworks')),
 ]

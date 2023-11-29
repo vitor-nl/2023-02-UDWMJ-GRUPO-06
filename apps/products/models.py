@@ -13,6 +13,8 @@ class Product(models.Model):
         verbose_name = 'Produto'
         verbose_name_plural = 'Produtos'
         ordering =['id']
+        managed = True
+        db_table = 'products'
 
     def __str__(self):
         return self.name
