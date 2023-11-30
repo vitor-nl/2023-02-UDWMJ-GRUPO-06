@@ -3,3 +3,24 @@ body
 {
     background-color: palegreen;
 }
+
+.container
+{
+    margin: 100px ;
+    background-color: white;
+    border-color: black;
+    border-width: 15px;
+    border-style: inset;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: inherit;
+    margin-top: 50px;
+}
+
+.row
+{
+   background-color: white;
+   margin: auto;
+   border-radius: 10px;
+}
