@@ -4,10 +4,11 @@ from rest_framework import routers
 
 app_name = 'orders'
 
-router = routers.DefaultRouter()
-router.register('pedidos', views.OrderViewSet, basename='pedidos')
-router.register('pedidos_itens', views.OrderItemViewSet, basename='pedidos_itens')
-
 urlpatterns = [
-    path('', include(router.urls) )
+    path('', views.list_orders, name='list_orders'),
+    path('', views.list_orders, name='list_orders'),
+    path('adicionar/', views.add_order, name='add_order'),
+    path('editar/<int:id_order>/', views.edit_order, name='edit_order'),
+    path('excluir/<int:id_order>/', views.delete_order, name='delete_order'),
 ]
+
