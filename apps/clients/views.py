@@ -49,7 +49,7 @@ def edit_client(request, id_client):
     context['form'] = form
     return render(request, template_name, context)
 
-def delete_client(request, id_client):
+def delete_clients(request, id_client):
     client = Client.objects.get(id=id_client)
     client.delete()
     return redirect('clients:list_clients')
