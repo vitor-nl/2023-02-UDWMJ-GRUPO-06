@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block title %}
+
+    Lista de Pedidos de Item - {{ block.super }}
+
+{% endblock title %}
+
+{% block body %}
+
+{{ block.super }}
+
+    <div class="container">
+        <br />
+        <h5><b>Lista de Pedidos de Item</b></h5>
+        <div class="row">
+            <div class ="col-md-12">
+                <br />
+                    <a href="{% url 'orders:add_orderItem' %}">Realizar um novo Pedido Item</a>
+                <br />
+                <br />
+                <table class="table table-hover">
+                <thead>
+                    <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nome do Produto</th>
+                    <th scope="col">Pedido</th>
+                    <th scope="col">Preço de unidade</th>
+                    <th scope="col">Quantidae</th>
+                    <th scope="col">Valor de todas unidades</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for orderItem in orderItems %}
+                        <tr>
+                            <th scope="row">{{ orderItem.id }}</th>
+                            {% if orderItem.product %}  
+                            <td>{{ orderItem.product.name }}</td>
+                            {% else %}
+                            <td>Não associado a um produto</td>
+                            {% endif %}
+                            <td>{{ orderItem.order.id }}</td>
+                            <td>{{ orderItem.unitary_price }}</td>
+                            <td>{{ orderItem.quantity }}</td>
+                            <td>{{ orderItem.valor_dos_produtos }}</td>
+                            <td>
+                                <a href="{% url 'orders:edit_orderItem' orderItem.id %}" class="btn btn-primary btn-sm">Editar Pedido de Item</a>
+                            </td>
+                            <td>
+                                <a href="{% url 'orders:delete_orderItem' orderItem.id %}" class="btn btn-danger btn-sm ">Excluir Pedido de Item</a>
+                            </td>
+                        </tr> 
+                    {% endfor %}
+                </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+{% endblock body %}
