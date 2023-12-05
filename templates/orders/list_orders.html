@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+
+{% block title %}
+
+    Lista de Pedidos - {{ block.super }}
+
+{% endblock title %}s
+
+{% block body %}
+
+{{ block.super }}
+
+    <div class="container">
+        <br />
+        <h5><b>Lista de Pedidos</b></h5>
+        <div class="row">
+            <div class ="col-md-12">
+                <br />
+                    <a href="{% url 'orders:add_order' %}">Realizar um novo Pedido</a>
+                <br />
+                <br />
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Cliente</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Preço Total</th>
+                            <th scope="col">Pedidos De itens</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for order in orders %}
+                            <tr>
+                                <th scope="row">{{ order.id }}</th>
+                                {% if order.client %}
+                                    <td>{{ order.client.first_name }}</td>
+                                {% else %}
+                                    <td>Não associado a um Cliente</td>
+                                {% endif %}
+                                <td>{{ order.status }}</td>
+                                <td>{{ order.total_price }}</td>
+                                <td>
+                                    {% if order.orderitem_set.exists %}
+                                        <table>
+                                            <tr>
+                                                <th>Produto</th>
+                                                <th>Quantidade</th>
+                                                <th>Preço Unitário</th>
+                                                <th>Total</th>
+                                            </tr>
+                                            {% for order_item in order.orderitem_set.all %}
+                                                <tr>
+                                                    <td>{{ order_item.product.name }}</td>
+                                                    <td>{{ order_item.quantity }}</td>
+                                                    <td>{{ order_item.unitary_price }}</td>
+                                                    <td>{{ order_item.valor_dos_produtos }}</td>
+                                                </tr>
+                                            {% endfor %}
+                                        </table>
+                                    {% else %}
+                                        Sem pedidos de item associados.
+                                    {% endif %}
+                                <td>
+                                    <a href="{% url 'orders:delete_order' order.id %}" class="btn btn-danger btn-sm ">Excluir Pedido (não exclui P.I.)</a>
+                                <td>
+                                    <a href="{% url 'orders:edit_order' order.id %}" class="btn btn-primary btn-sm">Editar Pedido</a>
+                                </td>
+                                </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+{% endblock body %}
