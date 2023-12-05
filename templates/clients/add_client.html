@@ -1,10 +1,8 @@
 {% extends 'base.html' %}
-{% load widget_tweaks %} 
+{% load widget_tweaks %}
 
 {% block title %}
-
     Adicionar Cliente - {{ block.super }}
-
 {% endblock title %}
 
 {% block body %}
@@ -12,47 +10,40 @@
 
     <div class="container">
         <br />
-    <h5><b>Cadastro de Cliente</b></h5>
+        <h5><b>Adicionar Novo Cliente</b></h5>
         <div class="row">
-            <div class ="col-md-12">
-                <form action="" method="POST">
-                {% csrf_token %}
-                <div class="form-group">
-                   <label for="{{ form.firts_name.id_for_label }}">Primeiro Nome</label>
-                   {{ form.first_name|add_class:"form-control" }}
-                </div>
-                <div class="form-group">
-                    <label for="{{ form.last_name.id_for_label }}">Sobrenome</label>
-                    {{ form.last_name|add_class:"form-control" }}
-                 </div>
-                 <div class="form-group">
-                    <label for="{{ form.address.id_for_label }}">Endereço</label>
-                    {{ form.address|add_class:"form-control" }}
-                 </div>
-                 <div class="form-group">
-                    <label for="{{ form.cell_phone.id_for_label }}">Telefone</label>
-                    {{ form.cell_phone|add_class:"form-control" }}
-                 </div>
-                 <div class="form-group">
-                    <label for="{{ form.email.id_for_label }}">Email</label>
-                    {{ form.email|add_class:"form-control" }}
-                 </div>
-                 <div class="form-group">
-                    <label for="{{ form.GENDER_CHOICES.id_for_label }}">Gênero</label>
-                    {{ form.GENDER_CHOICES|add_class:"form-control" }}
-                    <select name="{{ form.GENDER_CHOICES.name }}" class="form-control">
-                        {% for value, display_value in form.GENDER_CHOICES.field.choices %}
-                            <option value="{{ value }}" {% if form.GENDER_CHOICES.value == value %}selected{% endif %}>{{ display_value }}</option>
-                        {% endfor %}
-                        <option value="feminino" {% if form.GENDER_CHOICES.value == 'feminino' %}selected{% endif %}>Feminino</option>
-                        <option value="masculino" {% if form.GENDER_CHOICES.value == 'masculino' %}selected{% endif %}>Masculino</option>
-                        <option value="outro" {% if form.GENDER_CHOICES.value == 'outro' %}selected{% endif %}>Outro</option>
-                    </select>
-                </div>
-                    <button type="submit" class="btn btn-primary">Salvar</button>
+            <div class="col-md-12">
+                <form action="" method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <label for="{{ form.first_name.id_for_label }}">Nome</label>
+                        {{ form.first_name|add_class:"form-control" }}
+                    </div>
+                    <div class="form-group">
+                        <label for="{{ form.last_name.id_for_label }}">Sobrenome</label>
+                        {{ form.last_name|add_class:"form-control" }}
+                    </div>
+                    <div class="form-group">
+                        <label for="{{ form.address.id_for_label }}">Endereço</label>
+                        {{ form.address|add_class:"form-control" }}
+                    </div>
+                    <div class="form-group">
+                        <label for="{{ form.cell_phone.id_for_label }}">Telefone Celular</label>
+                        {{ form.cell_phone|add_class:"form-control" }}
+                    </div>
+                    <div class="form-group">
+                        <label for="{{ form.email.id_for_label }}">E-mail</label>
+                        {{ form.email|add_class:"form-control" }}
+                    </div>
+                    <div class="form-group">
+                        <label for="{{ form.gender.id_for_label }}">Gênero</label>
+                        {{ form.gender|add_class:"form-control" }}
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Salvar</button>
+                    </div>
                 </form>
             </div>
         </div>
     </div>
-
 {% endblock body %}
