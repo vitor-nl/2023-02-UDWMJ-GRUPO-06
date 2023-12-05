@@ -1,6 +1,6 @@
 body
 {
-    background-color: grey;
+    background-color: #333;
     font-family: Arial, Helvetica, sans-serif !important;
     font-size: smaller !important;
 }
@@ -59,4 +59,115 @@ body
     font-family: Arial, Helvetica, sans-serif !important;
     font-weight: bold !important;
     border: 2px solid !important;
+}
+.post-carrinho{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+}
+.post{
+    max-width: 800px;
+}
+.carrinho{
+    position: absolute;
+    top: 100px;
+    right: 50px;
+    height: 50px;
+    width: 50px;
+    background-color: rgba(255,255,255,75);
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.img-carrinho{
+    position: absolute;
+    top: 10px;
+    left: 9px;
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin: auto;
+}
+.post{
+    margin: 100px ;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: inherit;
+    margin-top: 50px;
+}
+.img-post{
+    max-width: 100%;
+    border-radius: 5%;
+}
+.login
+{
+    top: auto;
+    position: absolute;
+    right: 200px;
+    height: 50px;
+    width: 50px;
+    background-color: #333;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.img-login{
+    fill:rgba(255, 255, 255, 75);
+    position: absolute;
+    top: 7px;
+    left: 9px;
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin: auto;
+}
+
+main{
+    padding: 25px;
+}
+main .principais-tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+main .tags{
+    background-color: #d8e3ec;
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+main .tags:hover{
+    background-color: #a8a8a8;
+}
+
+main .tags .informacoes{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #333333;
+    border-radius: 10px;
+}
+main .tags .informacoes span{
+    padding: 5px;
+    block-size: auto;
+    font-size: 17px;
+}
+
+main .tags .img-tags{
+    width: 90px;
+    height: 90px;
+}
+
+main .descricao{
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
 }
