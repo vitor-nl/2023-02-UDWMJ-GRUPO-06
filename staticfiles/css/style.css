@@ -125,15 +125,15 @@ body
 main{
     padding: 25px;
 }
-main .principais-tags{
+.principais-tags{
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
 }
 
-main .tags{
-    background-color: #d8e3ec;
+.tags{
+    background-color: rgba(255, 255, 255, 75);
     width: 200px;
     padding: 15px;
     display: flex;
@@ -144,28 +144,25 @@ main .tags{
     transition: 0.2s ease-in-out;
 }
 
-main .tags:hover{
-    background-color: #a8a8a8;
-}
-
-main .tags .informacoes{
+.tags .informacoes{
     display: flex;
     justify-content: space-between;
     border: 1px solid #333333;
     border-radius: 10px;
 }
-main .tags .informacoes span{
+.informacoes span{
     padding: 5px;
     block-size: auto;
     font-size: 17px;
 }
 
-main .tags .img-tags{
-    width: 90px;
-    height: 90px;
+.tags .img-tags{
+    fill: white;
+    width: 210px;
+    height: 210px;
 }
 
-main .descricao{
+.descricao{
     max-height: 80px;
     overflow-y: scroll;
     font-size: 14px;
