@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   width="768"
-   height="600"
-   viewBox="0 0 768 600"
+   width="765.76422"
+   height="281.31802"
+   viewBox="0 0 765.76422 281.31802"
    fill="none"
    version="1.1"
    id="svg24"
@@ -37,7 +37,7 @@
   <g
      clip-path="url(#clip0_4474_4499)"
      id="g20"
-     transform="matrix(0.99717969,0,0,0.84076046,1.878,-1.6135693)">
+     transform="matrix(0.99717969,0,0,0.84076046,-2.0980835e-8,-1.918524)">
     <path
        width="767.53326"
        height="284.27014"
@@ -331,57 +331,6 @@
        apply_with_radius="true"
        only_selected="false"
        hide_knots="false" />
-    <inkscape:path-effect
-       effect="fillet_chamfer"
-       id="path-effect78"
-       is_visible="true"
-       lpeversion="1"
-       nodesatellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1"
-       radius="0"
-       unit="px"
-       method="auto"
-       mode="F"
-       chamfer_steps="1"
-       flexible="false"
-       use_knot_distance="true"
-       apply_no_radius="true"
-       apply_with_radius="true"
-       only_selected="false"
-       hide_knots="false" />
-    <inkscape:path-effect
-       effect="fillet_chamfer"
-       id="path-effect77"
-       is_visible="true"
-       lpeversion="1"
-       nodesatellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1"
-       radius="0"
-       unit="px"
-       method="auto"
-       mode="F"
-       chamfer_steps="1"
-       flexible="false"
-       use_knot_distance="true"
-       apply_no_radius="true"
-       apply_with_radius="true"
-       only_selected="false"
-       hide_knots="false" />
-    <inkscape:path-effect
-       effect="fillet_chamfer"
-       id="path-effect76"
-       is_visible="true"
-       lpeversion="1"
-       nodesatellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1"
-       radius="0"
-       unit="px"
-       method="auto"
-       mode="F"
-       chamfer_steps="1"
-       flexible="false"
-       use_knot_distance="true"
-       apply_no_radius="true"
-       apply_with_radius="true"
-       only_selected="false"
-       hide_knots="false" />
     <linearGradient
        id="linearGradient57"
        inkscape:collect="always">
@@ -408,10 +357,10 @@
     </linearGradient>
     <filter
        id="filter0_d_4474_4499"
-       x="74.4715"
+       x="74.471497"
        y="149.61"
-       width="333.024"
-       height="316.778"
+       width="333.02399"
+       height="316.77802"
        filterUnits="userSpaceOnUse"
        color-interpolation-filters="sRGB">
       <feFlood
@@ -451,9 +400,9 @@
     </filter>
     <filter
        id="filter1_d_4474_4499"
-       x="373.387"
+       x="373.38699"
        y="151.717"
-       width="328.141"
+       width="328.14099"
        height="305.896"
        filterUnits="userSpaceOnUse"
        color-interpolation-filters="sRGB">
@@ -497,8 +446,10 @@
       <rect
          width="768"
          height="600"
-         fill="white"
-         id="rect24" />
+         fill="#ffffff"
+         id="rect24"
+         x="0"
+         y="0" />
     </clipPath>
     <linearGradient
        inkscape:collect="always"
@@ -506,7 +457,7 @@
        id="linearGradient53"
        x1="7.7862062"
        y1="-256.27548"
-       x2="769.99999"
+       x2="770"
        y2="-256.27548"
        gradientUnits="userSpaceOnUse"
        gradientTransform="matrix(1.0193295,0,0,1.0039211,-2.8666956,112.09049)" />
@@ -515,27 +466,27 @@
        xlink:href="#linearGradient52"
        id="linearGradient54"
        x1="74.471497"
-       y1="307.99901"
+       y1="307.99902"
        x2="407.49548"
-       y2="307.99901"
+       y2="307.99902"
        gradientUnits="userSpaceOnUse" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient52"
        id="linearGradient55"
        x1="373.38699"
-       y1="304.66499"
-       x2="701.52798"
-       y2="304.66499"
+       y1="304.66498"
+       x2="701.52795"
+       y2="304.66498"
        gradientUnits="userSpaceOnUse" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient57"
        id="linearGradient56"
        x1="145.597"
-       y1="179.3995"
-       x2="627.707"
-       y2="179.3995"
+       y1="179.39951"
+       x2="627.70697"
+       y2="179.39951"
        gradientUnits="userSpaceOnUse"
        gradientTransform="matrix(0.99496852,0,0,0.94911349,-0.02195031,-105.77358)" />
     <linearGradient
@@ -544,98 +495,98 @@
        id="linearGradient58"
        gradientUnits="userSpaceOnUse"
        x1="74.471497"
-       y1="307.99901"
+       y1="307.99902"
        x2="407.49548"
-       y2="307.99901" />
+       y2="307.99902" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient52"
        id="linearGradient59"
        gradientUnits="userSpaceOnUse"
        x1="74.471497"
-       y1="307.99901"
+       y1="307.99902"
        x2="407.49548"
-       y2="307.99901" />
+       y2="307.99902" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient52"
        id="linearGradient60"
        gradientUnits="userSpaceOnUse"
        x1="74.471497"
-       y1="307.99901"
+       y1="307.99902"
        x2="407.49548"
-       y2="307.99901" />
+       y2="307.99902" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient52"
        id="linearGradient61"
        gradientUnits="userSpaceOnUse"
        x1="74.471497"
-       y1="307.99901"
+       y1="307.99902"
        x2="407.49548"
-       y2="307.99901" />
+       y2="307.99902" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient52"
        id="linearGradient62"
        gradientUnits="userSpaceOnUse"
        x1="74.471497"
-       y1="307.99901"
+       y1="307.99902"
        x2="407.49548"
-       y2="307.99901" />
+       y2="307.99902" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient52"
        id="linearGradient63"
        gradientUnits="userSpaceOnUse"
        x1="373.38699"
-       y1="304.66499"
-       x2="701.52798"
-       y2="304.66499" />
+       y1="304.66498"
+       x2="701.52795"
+       y2="304.66498" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient52"
        id="linearGradient64"
        gradientUnits="userSpaceOnUse"
        x1="373.38699"
-       y1="304.66499"
-       x2="701.52798"
-       y2="304.66499" />
+       y1="304.66498"
+       x2="701.52795"
+       y2="304.66498" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient52"
        id="linearGradient65"
        gradientUnits="userSpaceOnUse"
        x1="373.38699"
-       y1="304.66499"
-       x2="701.52798"
-       y2="304.66499" />
+       y1="304.66498"
+       x2="701.52795"
+       y2="304.66498" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient52"
        id="linearGradient66"
        gradientUnits="userSpaceOnUse"
        x1="373.38699"
-       y1="304.66499"
-       x2="701.52798"
-       y2="304.66499" />
+       y1="304.66498"
+       x2="701.52795"
+       y2="304.66498" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient52"
        id="linearGradient67"
        gradientUnits="userSpaceOnUse"
        x1="373.38699"
-       y1="304.66499"
-       x2="701.52798"
-       y2="304.66499" />
+       y1="304.66498"
+       x2="701.52795"
+       y2="304.66498" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient52"
        id="linearGradient68"
        gradientUnits="userSpaceOnUse"
        x1="373.38699"
-       y1="304.66499"
-       x2="701.52798"
-       y2="304.66499" />
+       y1="304.66498"
+       x2="701.52795"
+       y2="304.66498" />
   </defs>
 </svg>
